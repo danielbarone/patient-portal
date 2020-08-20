@@ -23,6 +23,7 @@ export const useStyles = makeStyles((theme) => ({
   }
 }));
 
+// User session query
 const query = gql`
   {
     userSession(me: true) {
