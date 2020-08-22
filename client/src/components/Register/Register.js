@@ -46,7 +46,7 @@ const Register = (props) => {
 
   return (
     <form onSubmit={onSubmit} className={classes.formModalContainer}>
-      <Typography className={classes.welcomeMsg} variant='h6'>Welcome to Temp</Typography>
+      <Typography className={classes.welcomeMsg} variant='h6'>Welcome to Your Patient Portal</Typography>
       <Typography className={classes.authError}>{authError}</Typography>
       <TextField
         className={classes.logInInput}
