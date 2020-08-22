@@ -12,7 +12,8 @@ const Home = (props) => {
     </div>
   ) : (
     <div>
-        <h1 className={classes.header}>Not logged in.</h1>
+        <h1 className={classes.header}>Welcome to Your Patient Portal!</h1>
+        <h3 className={classes.header}>Please sign in to continue.</h3>
     </div>
   );
 };
