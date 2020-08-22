@@ -19,7 +19,6 @@ import {
 
 const Routes = () => 
     <Switch>
-        <Route exact path="/" component={Home} />
         <Route exact path="/appointments" component={Appointment} />
         <Route exact path="/billing" component={Billing} />
         <Route exact path="/canceled" component={Canceled} />
@@ -29,6 +28,7 @@ const Routes = () =>
         <Route exact path="/results" component={Results} />
         <Route exact path="/success" component={Success} />
         <Route exact path="/register" component={Register} />
+        <Route path="/" component={Home} />
     </Switch>
 
 export default Routes;

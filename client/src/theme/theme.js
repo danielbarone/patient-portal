@@ -82,16 +82,90 @@ const light = createMuiTheme({
     EXPAND_PAID: colors.AURORA[3],
     EXPAND_OVERDUE: colors.AURORA[0],
 
-    // Material-UI Overrides
-    overrides: {
-        MuiListItem: {
-          root: {
-            '&$selected': {
-                backgroundColor: colors.SNOW_STORM[0],
-                color: colors.FROST[3]
-            }
+    // Buttons
+    buttons: {
+      primary: {
+        color: colors.DARKS[2],
+        borderColor: 'transparent',
+        transition: 'all 0.3s ease',
+        backgroundColor: colors.HIGHLIGHTS[1],
+        boxShadow: 'none !important',
+        '&:hover': {
+          backgroundColor: `${colors.HIGHLIGHTS[1]} !important`,
+          color: colors.DARKS[1],
+          filter: 'brightness(85%)',
+        },
+      },
+      outlined: {
+        backgroundColor: 'transparent',
+        color: colors.HIGHLIGHTS[1],
+        border: `solid 1px ${colors.HIGHLIGHTS[1]}`,
+        transition: 'all 0.3s ease',
+        '&:hover': {
+          backgroundColor: `${colors.WHITES[2]} !important`,
+          color: colors.HIGHLIGHTS[1],
+          border: `solid 1px ${colors.HIGHLIGHTS[1]}`,
+        },
+      },
+    },
+    // Colors
+    colors: {
+      background: {
+        primary: colors.WHITE,
+        secondary: colors.WHITES[3],
+        tertiary: colors.WHITES[2],
+        quaternary: colors.WHITES[0],
+        active: colors.WHITES[0],
+      },
+      divider: {
+        primary: colors.WHITES[0],
+        secondary: colors.WHITES[0],
+        inputBorder: {
+          primary: colors.WHITES[0],
+          hover: colors.DARKS[4],
+          focused: colors.DARKS[4],
+        },
+      },
+      icon: {
+        active: colors.HIGHLIGHTS[3],
+      },
+      text: {
+        primary: colors.DARKS[4],
+        secondary: colors.HIGHLIGHTS[3],
+        error: colors.ERROR,
+        highlight: colors.HIGHLIGHTS[1],
+        purple: colors.PURPLE,
+        success: colors.SUCCESS,
+        warning: colors.WARNING,
+        white: colors.WHITE,
+        yellow: colors.YELLOW,
+        input: {
+          primary: colors.DARKS[4],
+          focused: colors.HIGHLIGHTS[1],
+          label: {
+            primary: colors.DARKS[4],
+            focused: colors.HIGHLIGHTS[1],
           },
         },
+      },
+    },
+    // Icons
+    icons: {
+      default: {
+        color: 'inherit',
+      },
+    },
+    // Material-UI Overrides
+    overrides: {
+      MuiListItem: {
+        root: {
+          '&$selected': {
+            // backgroundColor: colors.WHITES[0],
+            backgroundColor: 'transparent',
+            color: colors.HIGHLIGHTS[3],
+          },
+        },
+      },
     },
 });
 
@@ -169,17 +243,89 @@ const dark = createMuiTheme({
 
     EXPAND_PAID: colors.WHITE,
     EXPAND_OVERDUE: colors.WHITE,
-
-    // Material-UI Overrides
-    overrides: {
-        MuiListItem: {
-          root: {
-            '&$selected': {
-                backgroundColor: colors.POLAR_NIGHT[1],
-                color: colors.FROST[1],
-            },
+    // Buttons
+    buttons: {
+      primary: {
+        color: colors.DARKS[2],
+        borderColor: 'transparent',
+        transition: 'all 0.3s ease',
+        backgroundColor: colors.HIGHLIGHTS[1],
+        boxShadow: 'none !important',
+        '&:hover': {
+          backgroundColor: `${colors.HIGHLIGHTS[1]} !important`,
+          color: colors.DARKS[1],
+          filter: 'brightness(85%)',
+        },
+      },
+      outlined: {
+        backgroundColor: 'transparent',
+        color: colors.WHITES[0],
+        border: `solid 1px ${colors.DARKS[4]}`,
+        transition: 'all 0.3s ease',
+        '&:hover': {
+          color: colors.HIGHLIGHTS[3],
+          border: `solid 1px ${colors.HIGHLIGHTS[3]}`,
+        },
+      },
+    },
+    // Colors
+    colors: {
+      background: {
+        primary: colors.DARKS[1],
+        secondary: colors.DARKS[0],
+        tertiary: colors.DARKS[1],
+        quaternary: colors.DARKS[2],
+        active: colors.DARKS[2],
+      },
+      divider: {
+        primary: colors.DARKS[2],
+        secondary: colors.DARKS[3],
+        inputBorder: {
+          primary: colors.DARKS[2],
+          hover: colors.HIGHLIGHTS[3],
+          focused: colors.HIGHLIGHTS[3],
+        },
+      },
+      icon: {
+        active: colors.HIGHLIGHTS[1],
+      },
+      text: {
+        primary: colors.WHITES[2],
+        secondary: colors.HIGHLIGHTS[1],
+        error: colors.ERROR,
+        highlight: colors.HIGHLIGHTS[1],
+        purple: colors.PURPLE,
+        success: colors.SUCCESS,
+        warning: colors.WARNING,
+        white: colors.WHITE,
+        yellow: colors.YELLOW,
+        input: {
+          primary: colors.WHITES[0],
+          focused: colors.HIGHLIGHTS[1],
+          label: {
+            primary: colors.WHITES[0],
+            focused: colors.HIGHLIGHTS[3],
           },
         },
+      },
+    },
+    // Icons
+    icons: {
+      default: {
+        color: 'inherit',
+      },
+    },
+    // Material-UI Overrides
+    overrides: {
+      MuiListItem: {
+        root: {
+          '&$selected': {
+            // backgroundColor: colors.DARKS[2],
+            backgroundColor: 'transparent',
+            color: colors.HIGHLIGHTS[1],
+          },
+        },
+      },
     },
 });
 

@@ -1,6 +1,8 @@
 import Header from './Appointment/Header';
-import AvatarBtn from './Avatar/AvatarBtn';
+import AuthButton from './Button/AuthButton';
+import AvatarBtn from './Button/AvatarBtn';
 import Calendar from './Appointment/Calendar';
+import LogIn from './LogIn/LogIn';
 import Profile from './Profile/Profile';
 import ProfileForm from './Profile/ProfileForm';
 import DatePicker from './Appointment/Schedule'
@@ -21,9 +23,15 @@ import {InvoiceTabContent} from './Billing/InvoiceTabContent';
 import {PaymentTabContent} from './Billing/PaymentTabContent';
 import TermsAndConditions from './Billing/TermsAndConditions';
 
-import Dashboard from './Dashboard/Dashboard'
+import Dashboard from './Dashboard/Dashboard';
+import Icon from './Icon/Icon';
+import LandingPage from './LandingPage/LandingPage';
+import Home from './Home/Home';
+import Preview from './Preview/Preview';
+import Register from './Register/Register';
 
 export {
+    AuthButton,
     AvatarBtn,
     BasicTable,
     BillingOverview,
@@ -35,14 +43,20 @@ export {
     DatePicker,
     Header,
     Help,
+    Home,
+    Icon,
     InnerSideBar,
     InvoiceList,
     InvoiceTabContent,
+    LandingPage,
+    LogIn,
     LogoutButton,
     Messages,
     PaymentTabContent,
+    Preview,
     Profile,
     ProfileForm,
+    Register,
     Results,
     SideBar,
     Success,
