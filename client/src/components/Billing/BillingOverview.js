@@ -8,7 +8,7 @@ import { useSelector } from 'react-redux';
 const BillingOverview = (props) => {
   const classes = useStyles(props);
   const user = useSelector(state => state.session.user);
-  const stripeid = useSelector(state => state.invoiceReducer.invoices[0].stripeid);
+  const stripeid = useSelector(state => state.invoiceReducer.invoices[0] ? state.invoiceReducer.invoices[0].stripeid : '');
 
   return (
     <div className={classes.root}>
@@ -23,9 +23,13 @@ const BillingOverview = (props) => {
           </div>
         </div>
         <div>
-          <form method="POST" action={`/create-customer-portal-session?stripeid=${stripeid}`}>
-              <Button variant="outline" type="submit" className={classes.stripeBilling}>Manage your billing </Button>
-          </form>
+          {stripeid ? (
+            <form method="POST" action={`/create-customer-portal-session?stripeid=${stripeid}`}>
+                <Button variant="outline" type="submit" className={classes.stripeBilling}>Manage your billing </Button>
+            </form>
+          ) : (
+            <Button variant="outline" className={classes.stripeBilling}>You have 0 invoices</Button>
+          )}
         </div>
       </Paper>
       <Divider className={classes.divider} />
