@@ -12,7 +12,7 @@ import {
     InvoiceTabContent,
     PaymentTabContent,
     TermsAndConditions,
-} from '../../components';
+} from '..';
 import { grabInvoices } from '../../services/billing/actions';
 
 const Billing = (props) => {

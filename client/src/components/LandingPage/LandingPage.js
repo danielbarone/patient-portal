@@ -46,7 +46,7 @@ function LandingPage(props) {
   const styleProps = { 
     ...props, 
     currentPage: location.pathname.substring(1),
-    noPadding: ['Billing',]
+    noPadding: ['billing',]
   };
   const classes = useStyles(styleProps);
 

@@ -9,6 +9,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useMutation } from '@apollo/react-hooks';
 import useStyles from './AuthButton.styles';
 import { clearSession } from '../../services/Session/actions';
+import { history } from "../../navigation";
 
 import { deleteSession } from '../../utils/mutations';
 import { Icon } from '..';
@@ -38,6 +39,7 @@ const AuthButton = (props) => {
             dispatch(clearSession());
             dispatch(logoutAttempt());
             deleteUserSession({ variables: { sessionId: session.id } });
+            history.push('/');
           }
         }}
       >

@@ -75,7 +75,7 @@ function Row(props) {
         <TableCell align='center' className={classes.money}>${row.totalamount}</TableCell>
         <TableCell align='center' className={classes.paymentStatus} id={`${row.stripeid}-${row.paymentStatus}`}>
           {row.statecode === 2 ? (
-            <a href={row.receipt_url}><CheckCircleIcon className={classes.paymentCompleteIcon} /></a>
+            <a href={row.receipt_url} rel="noopener noreferrer" target='_blank'><CheckCircleIcon className={classes.paymentCompleteIcon} /></a>
           ) : (
             <Checkout 
               price={row.totalamount * 100} 

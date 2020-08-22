@@ -8,7 +8,7 @@ const Home = (props) => {
 
   return session ? (
     <div>
-        <h1 className={classes.header}>Logged in.</h1>
+        <h1 className={classes.header}>Welcome to your Patient Portal!</h1>
     </div>
   ) : (
     <div>

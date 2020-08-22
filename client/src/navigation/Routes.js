@@ -4,17 +4,13 @@ import { Switch, Route } from "react-router-dom";
 import {
     Appointment,
     Billing,
-    Home,
-    Register
-} from '../pages';
-
-import {
     Canceled,
     Checkout,
+    Home,
+    Messages,
+    Profile,
     Results,
     Success,
-    Messages,
-    Profile
 } from "../components";
 
 const Routes = () => 
@@ -27,7 +23,6 @@ const Routes = () =>
         <Route exact path="/profile" component={Profile} />
         <Route exact path="/results" component={Results} />
         <Route exact path="/success" component={Success} />
-        <Route exact path="/register" component={Register} />
         <Route path="/" component={Home} />
     </Switch>
 
